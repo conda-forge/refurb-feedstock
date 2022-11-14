@@ -1,5 +1,5 @@
 {% set name = "refurb" %}
-{% set version = "1.6.0" %}
+{% set version = "1.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/refurb-{{ version }}.tar.gz
-  sha256: d04f169baa93fe8024519e4da94d926f4bf673a7f1748f76eb2e5c369f402b14
+  sha256: 6fbbf99c678096798ce548bcd4c7268a95eaf062c7a9faccb3d4e626a3238b62
 
 build:
   entry_points:
@@ -22,8 +22,9 @@ requirements:
     - poetry-core >=1.0.0
     - python >=3.10,<4.0
   run:
-    - mypy >=0.981,<0.982
+    - mypy >=0.981,<=0.990
     - python >=3.10,<4.0
+    - tomli >=2.0.1,<3.0.0
 
 test:
   imports:
