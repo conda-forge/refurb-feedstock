@@ -1,5 +1,5 @@
 {% set name = "refurb" %}
-{% set version = "1.8.0" %}
+{% set version = "1.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/refurb-{{ version }}.tar.gz
-  sha256: c4266dc6c3f8e9876c21d8344db0905cb66e679b08c919d00207a613a268a537
+  sha256: 9f28f39f6d18e89fe4001a2617fdac3edc6d6cf2176172591d2c29063c8ab437
 
 build:
   entry_points:
