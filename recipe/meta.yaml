@@ -14,7 +14,7 @@ build:
     - refurb = refurb.__main__:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -22,7 +22,7 @@ requirements:
     - poetry-core >=1.0.0
     - python >=3.10,<4.0
   run:
-    - mypy >=0.981,<=0.991
+    - mypy >=0.981
     - python >=3.10,<4.0
     - tomli >=2.0.1,<3.0.0
 
@@ -44,3 +44,4 @@ about:
 extra:
   recipe-maintainers:
     - thewchan
+    - dosisod
