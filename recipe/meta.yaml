@@ -1,5 +1,5 @@
 {% set name = "refurb" %}
-{% set version = "1.17.0" %}
+{% set version = "1.18.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/refurb-{{ version }}.tar.gz
-  sha256: bcce45ec3b7febd352476a9bd6ee9e17ecfc3f95aae59305e3294675e4829d82
+  sha256: e8f45bc03d888fed7f5cc2996c1a14437e7715b542fedeb9c7b39a78f0589e6d
 
 build:
   entry_points:
     - refurb = refurb.__main__:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
