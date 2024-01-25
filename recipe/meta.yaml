@@ -14,7 +14,7 @@ build:
     - refurb = refurb.__main__:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -37,7 +37,7 @@ test:
 
 about:
   home: https://github.com/dosisod/refurb
-  summary: A tool for refurbish and modernize Python codebases
+  summary: A tool for refurbishing and modernizing Python codebases
   license: GPL-3.0-or-later
   license_file: LICENSE
 
