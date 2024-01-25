@@ -7,7 +7,7 @@ Home: https://github.com/dosisod/refurb
 
 Package license: GPL-3.0-or-later
 
-Summary: A tool for refurbish and modernize Python codebases
+Summary: A tool for refurbishing and modernizing Python codebases
 
 Current build status
 ====================
