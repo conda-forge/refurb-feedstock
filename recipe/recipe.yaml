@@ -36,7 +36,7 @@ tests:
       imports:
         - refurb
       pip_check: true
-      python_version: ${{ python_min }}
+      python_version: ${{ python_min }}.*
   - script:
       - refurb --help
 
