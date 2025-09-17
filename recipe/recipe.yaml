@@ -3,7 +3,7 @@ schema_version: 1
 context:
   python_min: 3.10
   name: refurb
-  version: 2.1.0
+  version: "2.2.0"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/refurb-${{ version }}.tar.gz
-  sha256: 4fb41a3a6523a035c2379792776d4c28ddb291c7fcb8348725cc01749a98e32c
+  sha256: 645472793b3af40cca121e37df45dd9b20b525c4df99429d9fd9f6b5c238b9ea
 
 build:
   number: 0
