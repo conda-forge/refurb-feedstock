@@ -39,7 +39,7 @@ tests:
   - requirements:
       run:
         - python ${{ python_min }}.*
-  - script:
+    script:
       - refurb --help
 
 about:
